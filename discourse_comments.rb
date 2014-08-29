@@ -25,8 +25,8 @@ module Jekyll
 
     def snippet(url)
       <<-EOF.unindent
-        <div id="discourse-comments"></div>
 
+        <div id="discourse-comments"></div>
         <script type="text/javascript">
           var discourseUrl = "#{@site.config['discourse_url']}",
               discourseEmbedUrl = "#{@site.config['url'] + @site.config['baseurl'] + url}";
