@@ -3,7 +3,7 @@
 # Generates Discourse comments for posts
 #
 # Author: Blake Erickson, Justin Gordon
-# Site: http://blakeerickson.com, http://www.railsonmaui.com and http://forum.railsonmaui.com
+# Site: http://blakeerickson.com, http://www.railsonmaui.com
 # Plugin Source: http://github.com/oblakeerickson/jekyll_discourse_comments
 # Plugin License: MIT
 
@@ -28,7 +28,7 @@ module Jekyll
 
         <div id="discourse-comments"></div>
         <script type="text/javascript">
-          var discourseUrl = "#{@site.config['discourse_url']}",
+          var discourseUrl = "#{File.join(@site.config['discourse_url'], '')}",
               discourseEmbedUrl = "#{@site.config['url']}#{@site.config['baseurl']}#{url}";
 
           (function() {
